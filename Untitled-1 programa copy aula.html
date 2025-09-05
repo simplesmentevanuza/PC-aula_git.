@@ -1,0 +1,100 @@
+<!-- declara que o documento é HTML5 -->
+<!DOCTYPE html>
+<!-- define o idioma da pagina -->
+<html lang="pt-BR">
+<head>
+    <!-- define a codificação de caracteres que
+    suporta acentos -->
+    <meta charset="UTF-8">
+    <!-- faz pagina se adaptar a largura dispositivo
+    (responsividade) -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- titulo da nossa pagina -->
+    <title>Site exemplo - Estrutura básica HTML</title>
+</head>
+
+<!-- É O CORPO DA NOSSA PAGINA, O QUE O USUÁRIO VÊ -->
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <!-- TITULO PRINCIPAL DA PAGINA -->
+        <h1> Aprendendo sobre HTML </h1>
+        <!-- subtitulo ou descricação do site -->
+        <P> Estrutura básica em HTML </P>
+        <!-- menu de navegação -->
+        <nav>
+            <ul>
+                <!-- cada li é um item do nosso menu -->
+                <li> <a href="#incio">Códigos</a></li>
+                <li> <a href="#noticia">Dicas</a></li>
+                <li> <a href="#contato">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--TAG MAIN SIGNIFICA QUE ESSE É  CONTEUDO PRINCIPAL -->
+    <main id="incio">
+        <!-- secao de boas vindas -->
+        <section>
+            <h2> Bem-vindo(a)! Seja paciente e persistente!</h2>
+            <article>
+                <h3> O que vamos ver? </h3>
+                <p> Esta página demonstra a
+                    <strong> estrutura semântica</strong>
+                     </p>
+            </article>
+        </section>
+
+        <section id="noticias">
+            <h2> Códigos </h2>
+            <article>
+                <h3> Código 1 </h3>
+                <p> Exemplo de código dado em aula </p>
+            </article>
+            <article>
+                <h3> Código 2 </h3>
+                <p> Exemplo de código para treino </p>
+            </article>
+        </section>
+
+        <!-- conteudo lateral de links relacionados -->
+        <aside>
+            <h2>Links relacionados </h2>
+            <ul>
+                <li><a href="#incio"></a> Voltar para Códigos </li>
+                <li><a href="#incio"></a> Ir para Dicas </li>
+                <li><a href="#incio"></a> Ir para Dúvidas </li>
+            </ul>
+        </aside>
+
+        <!-- secao de contato com formulário -->
+        <section id="contato">
+            <h2> Contato </h2>
+            <!-- tag que identifica que aqui é um formulário -->
+            <form>
+                <!-- campo de texto para o nome -->
+               <label for="nome"> Nome: </label> <br/>
+               <input id="nome" name="nome" type="text"/>
+                <br/> <br/>
+                <!-- campo de texto para o email -->
+                <label for="email"> Email: </label> <br/>
+                <input id="email" name="email" type="email"/>
+                <br/> <br/>
+
+                <label> Mensagem: </label> <br/>
+                <textarea id="mensagem" name="mensagem" rows="4">
+                </textarea>
+                <br/>
+                <!-- botao para envio do contato -->
+                <button type="submit"> Enviar </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPE -->
+    <footer>
+        <p> &copy; 2025 - Primeiro trabalho para entregar </p>
+    </footer>
+</body>
+</html>

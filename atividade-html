@@ -27,8 +27,8 @@
             <ul>
                 <!-- cada li é um item do nosso menu -->
                 <li> <a href="#incio">Códigos</a></li>
-                <li> <a href="#noticia">Dicas</a></li>
-                <li> <a href="#contato">Dúvidas</a></li>
+                <li> <a href="#dicas">Dicas</a></li>
+                <li> <a href="#dúvidas">Dúvidas</a></li>
             </ul>
         </nav>
     </header>
@@ -98,3 +98,4 @@
     </footer>
 </body>
 </html>
+
